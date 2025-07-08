@@ -5,6 +5,11 @@
   --color-primary-light: #faf4ea;
 }
 
+/* Common */
+* {
+  box-sizing: border-box;
+}
+
 address {
   font-style: normal;
 }
@@ -15,9 +20,37 @@ body {
   font-size: 18px;
   font-weight: 400;
   line-height: 1.5;
+  margin: 0;
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+}
+
 ul {
   list-style: none;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1288px;
+  padding: 0 24px;
+  width: 100%;
+}
+
+.hidden-visually {
+  height: 1px;
+  left: -10000px;
+  overflow: hidden;
+  position: absolute;
+  top: auto;
+  width: 1px;
 }
 
 /* Address */
@@ -55,6 +88,7 @@ ul {
   font-size: 18px;
   font-weight: 600;
   line-height: 1.5;
+  padding: 16px 32px;
 }
 .button:hover {
   background-color: transparent;
@@ -65,6 +99,15 @@ ul {
 .chef-title {
   font-size: 40px;
   font-weight: 600;
+  margin-bottom: 16px;
+}
+.chefs-title {
+  margin-bottom: 80px;
+}
+
+/* Contacts */
+.contacts-title {
+  margin-bottom: 16px;
 }
 
 /* Formats */
@@ -76,12 +119,19 @@ ul {
   font-size: 24px;
   font-weight: 600;
 }
+.formats-title {
+  margin-bottom: 80px;
+}
 
 /* Hero */
+.hero-section {
+  padding: 272px 0;
+}
 .hero-title {
   color: var(--color-primary-light);
   font-size: 128px;
   font-weight: 900;
+  margin-bottom: 0;
 }
 .hero-title .accent {
   color: var(--color-brand-light);
@@ -98,6 +148,10 @@ ul {
 }
 
 /* Section */
+.section {
+  padding: 48px 0;
+}
+
 .section-title {
   font-size: 64px;
   font-weight: 900;
@@ -108,10 +162,16 @@ ul {
 }
 
 /* Traditions */
+.traditions {
+  padding-top: 96px;
+}
 .traditions-text .brand {
   color: var(--color-brand-light);
   font-weight: 600;
 }
 .traditions-text .uppercase {
   text-transform: uppercase;
+}
+.traditions-title {
+  margin-bottom: 42px;
 }
