@@ -35,6 +35,8 @@ p {
 
 ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .container {
@@ -68,13 +70,19 @@ ul {
 }
 
 /* Advantages */
+.advantages {
+  background-color: var(--color-brand-light);
+  padding: 16px 0;
+}
 .advantages-item {
+  color: var(--color-primary-light);
   font-size: 20px;
   font-weight: 300;
 }
 .advantages-list {
-  background-color: var(--color-brand-light);
-  color: var(--color-primary-light);
+  display: flex;
+  gap: 40px;
+  justify-content: space-between;
 }
 
 /* Button */
@@ -111,6 +119,12 @@ ul {
 }
 
 /* Formats */
+.format-card {
+  border: 1px solid lightgray;
+  border-radius: 16px;
+  padding: 24px;
+}
+
 .format-text {
   font-size: 14px;
   font-weight: 300;
@@ -119,8 +133,39 @@ ul {
   font-size: 24px;
   font-weight: 600;
 }
+
+.formats-item {
+  flex-basis: calc((100% - 40px) / 3);
+}
+.formats-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
 .formats-title {
   margin-bottom: 80px;
+}
+
+/* Header */
+.header {
+  background-color: #b0b0b0;
+}
+.header-container {
+  align-items: center;
+  display: flex;
+  gap: 40px;
+}
+.header-menu {
+  display: flex;
+  flex-grow: 1;
+  gap: 64px;
+  justify-content: center;
+}
+.header-nav {
+  align-items: center;
+  display: flex;
+  flex-grow: 1;
+  gap: 40px;
 }
 
 /* Hero */
@@ -144,7 +189,6 @@ ul {
 }
 .link:hover {
   color: var(--color-brand-light);
-  font-weight: 600;
 }
 
 /* Section */
@@ -164,6 +208,17 @@ ul {
 /* Traditions */
 .traditions {
   padding-top: 96px;
+}
+.traditions-container {
+  display: flex;
+  gap: 40px;
+  justify-content: space-between;
+}
+.traditions-content {
+  max-width: 710px;
+}
+.traditions-text.limited {
+  max-width: 340px;
 }
 .traditions-text .brand {
   color: var(--color-brand-light);
