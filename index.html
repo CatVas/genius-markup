@@ -244,7 +244,53 @@
                 Приєднуйся до мережі пекарень
               </h2>
               <p>Заповни форму, щоб ми звʼязались з тобою!</p>
-              <!-- form -->
+              <form autocomplete="off" name="contact-form">
+                <div class="form-field">
+                  <label class="form-label hidden-visually" for="user-name">
+                    Ім'я
+                  </label>
+                  <input
+                    class="form-input"
+                    id="user-name"
+                    name="user-name"
+                    placeholder="Ім'я"
+                    type="text"
+                  />
+                </div>
+                <div class="form-field">
+                  <label class="form-label hidden-visually" for="user-tel">
+                    Телефон
+                  </label>
+                  <input
+                    class="form-input"
+                    id="user-tel"
+                    name="user-tel"
+                    placeholder="Телефон"
+                    type="tel"
+                  />
+                </div>
+                <div class="form-field">
+                  <label class="form-label hidden-visually" for="user-email">
+                    Електронна пошта
+                  </label>
+                  <input
+                    class="form-input"
+                    id="user-email"
+                    name="user-email"
+                    placeholder="Електронна пошта"
+                    type="email"
+                  />
+                </div>
+                <button class="button form-button" type="submit">
+                  Замовити дзвінок
+                </button>
+                <p class="form-terms">
+                  Натискаючи на кнопку я погоджуюсь з
+                  <a class="form-terms-link" href="#" target="_blank">
+                    політикою конфіденційності
+                  </a>
+                </p>
+              </form>
             </div>
             <iframe
               class="contacts-map"
@@ -329,6 +375,55 @@
     <div class="backdrop is-hidden">
       <div class="modal">
         <button class="modal-btn-close" type="button">Close</button>
+        <h2>Замовити дзвінок</h2>
+        <p>Залишіть заявку та наш спеціаліст зв'яжеться з Вами!</p>
+        <form autocomplete="off" name="modal-form">
+          <div class="form-field">
+            <label class="form-label hidden-visually" for="user-name">
+              Ім'я
+            </label>
+            <input
+              class="form-input"
+              id="user-name"
+              name="user-name"
+              placeholder="Ім'я"
+              type="text"
+            />
+          </div>
+          <div class="form-field">
+            <label class="form-label hidden-visually" for="user-tel">
+              Телефон
+            </label>
+            <input
+              class="form-input"
+              id="user-tel"
+              name="user-tel"
+              placeholder="Телефон"
+              type="tel"
+            />
+          </div>
+          <div class="form-field">
+            <label class="form-label hidden-visually" for="user-email">
+              Електронна пошта
+            </label>
+            <input
+              class="form-input"
+              id="user-email"
+              name="user-email"
+              placeholder="Електронна пошта"
+              type="email"
+            />
+          </div>
+          <button class="button form-button" type="submit">
+            Замовити дзвінок
+          </button>
+          <p class="form-terms">
+            Натискаючи на кнопку я погоджуюсь з
+            <a class="form-terms-link" href="#" target="_blank">
+              політикою конфіденційності
+            </a>
+          </p>
+        </form>
       </div>
     </div>
     <script src="./js/script.js"></script>
