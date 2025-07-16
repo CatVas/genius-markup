@@ -1,0 +1,22 @@
+.button {
+  background-color: var(--color-brand-normal);
+  border: 2px solid var(--color-brand-normal);
+  border-radius: 8px;
+  color: var(--color-primary-light);
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.5;
+  padding: 16px 32px;
+}
+.button:hover {
+  background-color: transparent;
+  color: var(--color-brand-dark);
+}
+.button:disabled {
+  background-color: transparent;
+  border-color: currentColor;
+  color: var(--color-brand-dark);
+  cursor: not-allowed;
+}
