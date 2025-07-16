@@ -383,6 +383,7 @@
               Ім'я
             </label>
             <input
+              required
               class="form-input"
               id="user-name"
               name="user-name"
@@ -395,9 +396,11 @@
               Телефон
             </label>
             <input
+              required
               class="form-input"
               id="user-tel"
               name="user-tel"
+              pattern="^\+[0-9]{12}"
               placeholder="Телефон"
               type="tel"
             />
@@ -407,6 +410,7 @@
               Електронна пошта
             </label>
             <input
+              required
               class="form-input"
               id="user-email"
               name="user-email"
