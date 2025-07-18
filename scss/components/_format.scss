@@ -1,58 +1,66 @@
-.format-card {
-  background-image: linear-gradient(
-    180deg,
-    rgba(49, 38, 26, 0) 55.21%,
-    rgba(49, 38, 26, 0.71) 72.92%,
-    var(--color-primary-dark) 100%
-  );
-  border-radius: 16px;
-  display: flex;
-  flex-direction: column;
-  height: 444px;
-  justify-content: flex-end;
-  padding: 24px;
-  position: relative;
-  transition: transform 0.3s;
-}
-.format-card:hover {
-  transform: scale(1.05);
-}
+.format {
+  &-card {
+    background-image: linear-gradient(
+      180deg,
+      rgba(49, 38, 26, 0) 55.21%,
+      rgba(49, 38, 26, 0.71) 72.92%,
+      var(--color-primary-dark) 100%
+    );
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    height: 444px;
+    justify-content: flex-end;
+    padding: 24px;
+    position: relative;
+    transition: transform 0.3s;
 
-.format-image {
-  border-radius: 16px;
-  height: 100%;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 100%;
-  z-index: -1;
-}
+    &:hover {
+      transform: scale(1.05);
+    }
 
-.format-text {
-  color: var(--color-primary-light);
-  font-size: 14px;
-  font-weight: 300;
-}
-.format-title {
-  color: var(--color-primary-light);
-  font-size: 24px;
-  font-weight: 600;
-}
+    &__image {
+      border-radius: 16px;
+      height: 100%;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      z-index: -1;
+    }
 
-.formats-container {
-  align-items: center;
-  display: flex;
-  gap: 32px;
-}
+    &__text {
+      color: var(--color-primary-light);
+      font-size: 14px;
+      font-weight: 300;
+    }
 
-.formats-item {
-  flex-basis: calc((100% - 40px) / 3);
-}
-.formats-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-.formats-title {
-  margin-bottom: 80px;
+    &__title {
+      color: var(--color-primary-light);
+      font-size: 24px;
+      font-weight: 600;
+    }
+  }
+
+  &s {
+    &__container {
+      align-items: center;
+      display: flex;
+      gap: 32px;
+    }
+
+    &__item {
+      flex-basis: calc((100% - 40px) / 3);
+    }
+
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    &__title {
+      margin-bottom: 80px;
+    }
+  }
 }

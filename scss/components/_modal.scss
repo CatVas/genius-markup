@@ -8,10 +8,11 @@
   padding: 128px;
   position: relative;
   width: 100%;
-}
-.modal-btn-close {
-  cursor: pointer;
-  position: absolute;
-  right: 40px;
-  top: 40px;
+
+  &__btn-close {
+    cursor: pointer;
+    position: absolute;
+    right: 40px;
+    top: 40px;
+  }
 }
