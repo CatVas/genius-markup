@@ -1,8 +1,31 @@
-const modal = document.querySelector('.backdrop');
-const modalBtnClose = document.querySelector('.modal-btn-close');
-const modalBtnOpen = document.querySelector('.modal-btn-open');
+// Mobile menu
+makeHandler({
+  btnCloseClass: 'menu-btn-close',
+  btnOpenClass: 'menu-btn-open',
+  modalClass: 'mobile-menu',
+  modalClassToggle: 'is-open',
+});
 
-const toggleModal = () => modal.classList.toggle('is-hidden');
+// Modal
+makeHandler({
+  btnCloseClass: 'modal-btn-close',
+  btnOpenClass: 'modal-btn-open',
+  modalClass: 'backdrop',
+  modalClassToggle: 'is-hidden',
+});
 
-modalBtnClose.addEventListener('click', toggleModal);
-modalBtnOpen.addEventListener('click', toggleModal);
+function makeHandler({
+  btnCloseClass = '',
+  btnOpenClass = '',
+  modalClass = '',
+  modalClassToggle = '',
+} = {}) {
+  const modal = document.querySelector(`.${modalClass}`);
+  const modalBtnClose = document.querySelector(`.${btnCloseClass}`);
+  const modalBtnOpen = document.querySelector(`.${btnOpenClass}`);
+
+  const toggleModal = () => modal.classList.toggle(modalClassToggle);
+
+  modalBtnClose.addEventListener('click', toggleModal);
+  modalBtnOpen.addEventListener('click', toggleModal);
+}
