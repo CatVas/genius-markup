@@ -27,10 +27,20 @@
               <li><a class="link" href="#contacts">Контакти</a></li>
             </ul>
           </nav>
-          <button class="button modal-btn-open" type="button">
+          <button class="button header__button modal-btn-open" type="button">
             Замовити дзвінок
           </button>
+          <button class="header__burger menu-btn-open" type="button">
+            <svg height="24" width="24">
+              <use href="./img/icons.svg#icon-menu"></use>
+            </svg>
+          </button>
         </div>
+      </div>
+      <div class="mobile-menu">
+        <button class="mobile-menu__btn-close menu-btn-close" type="button">
+          Close
+        </button>
       </div>
     </header>
     <main>
@@ -39,6 +49,9 @@
           <h1 class="hero__title">
             <span class="text-brand">Сучасна</span> пекарня
           </h1>
+          <button class="button hero__button modal-btn-open" type="button">
+            Замовити дзвінок
+          </button>
         </div>
       </section>
       <section class="advantages">
@@ -55,7 +68,7 @@
         <div class="container">
           <div class="traditions__container">
             <div class="traditions__content">
-              <h2 class="section-title traditions__title">
+              <h2 class="section__title traditions__title">
                 Новий формат традицій
               </h2>
               <p>
@@ -73,13 +86,18 @@
               </p>
             </div>
             <img
+              class="traditions__image"
               src="./img/baker-looks-at-bread.jpg"
+              srcset="
+                ./img/baker-looks-at-bread.jpg    1x,
+                ./img/baker-looks-at-bread@2x.jpg 2x
+              "
               alt="Пекар оглядає випечені батони на полицях"
             />
           </div>
         </div>
       </section>
-      <section class="chefs section" id="chefs">
+      <!-- <section class="chefs section" id="chefs">
         <div class="container">
           <h2 class="chefs__title section__title section__title--centered">
             Наші найкращі<br />
@@ -143,8 +161,8 @@
             </li>
           </ul>
         </div>
-      </section>
-      <section class="formats section" id="formats">
+      </section> -->
+      <!-- <section class="formats section" id="formats">
         <div class="container">
           <h2 class="formats__title section__title section__title--centered">
             Формати
@@ -221,8 +239,8 @@
             </button>
           </div>
         </div>
-      </section>
-      <section class="contacts section" id="contacts">
+      </section> -->
+      <!-- <section class="contacts section" id="contacts">
         <div class="container">
           <div class="contacts__container">
             <div class="contacts-form">
@@ -299,9 +317,9 @@
             ></iframe>
           </div>
         </div>
-      </section>
+      </section> -->
     </main>
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container">
         <div class="footer-container">
           <nav class="footer-nav">
@@ -366,7 +384,7 @@
           </address>
         </div>
       </div>
-    </footer>
+    </footer> -->
     <div class="backdrop is-hidden">
       <div class="modal">
         <button class="modal__btn-close modal-btn-close" type="button">
