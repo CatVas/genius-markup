@@ -13,11 +13,6 @@
     justify-content: flex-end;
     padding: 24px;
     position: relative;
-    transition: transform 0.3s;
-
-    &:hover {
-      transform: scale(1.05);
-    }
 
     &__image {
       border-radius: 16px;
@@ -43,24 +38,34 @@
   }
 
   &s {
+    &__button {
+      display: none;
+
+      @media screen and (min-width: $bp-tablet) {
+        display: flex;
+      }
+    }
+
     &__container {
+      overflow: hidden;
+    }
+
+    &__list {
+      margin-bottom: 32px;
+    }
+
+    &__slider {
       align-items: center;
       display: flex;
       gap: 32px;
     }
 
-    &__item {
-      flex-basis: calc((100% - 40px) / 3);
-    }
-
-    &__list {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-    }
-
     &__title {
-      margin-bottom: 80px;
+      margin-bottom: 24px;
+
+      @media screen and (min-width: $bp-tablet) {
+        margin-bottom: 80px;
+      }
     }
   }
 }

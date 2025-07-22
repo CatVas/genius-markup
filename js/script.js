@@ -29,3 +29,27 @@ function makeHandler({
   modalBtnClose.addEventListener('click', toggleModal);
   modalBtnOpen.addEventListener('click', toggleModal);
 }
+
+// Swiper slider
+const swiper = new Swiper('.swiper-container', {
+  breakPoints: {
+    768: {
+      slidesPerView: 2,
+    },
+    1280: {
+      slidesPerView: 3,
+    },
+  },
+  loop: true,
+  navigation: {
+    nextEl: '.carousel-button.next',
+    prevEl: '.carousel-button.prev',
+  },
+  pagination: {
+    bulletActiveClass: 'pagination__button--active',
+    bulletClass: 'pagination__button',
+    el: '.pagination',
+  },
+  slidesPerView: 1,
+  spaceBetween: 20,
+});
