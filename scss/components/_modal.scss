@@ -5,9 +5,13 @@
   max-height: 880px;
   max-width: 880px;
   overflow-y: auto;
-  padding: 128px;
+  padding: 48px;
   position: relative;
   width: 100%;
+
+  @media screen and (min-width: $bp-tablet) {
+    padding: 128px;
+  }
 
   &__btn-close {
     cursor: pointer;
